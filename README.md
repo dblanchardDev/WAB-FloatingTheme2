@@ -3,6 +3,8 @@
 
 This custom responsive theme was built for demonstrations of Web AppBuilder for ArcGIS – Developer Edition. Each element in this theme is disconnected from others and floats on top of the map. This theme includes 2 textured styles: Wood Plank, and Slate.
 
+![Screenshot](https://github.com/dblanchardDev/WAB-FloatingTheme/raw/master/screenshots.jpg "")
+
 Since this theme does not make use of a controller, widgets are limited to the 5 placeholders that are provided by default (more can be added by modifying the layout configuration).
 
 This is an excellent theme for developers looking for a starting point in building their own themes as the code has been stripped down to a minimum and is well commented.
