@@ -1,0 +1,90 @@
+
+/*Import custom web font************************/
+@import url(//fonts.googleapis.com/css?family=Exo:700);
+
+/*Main background colour/texture****************/
+.jimu-main-bgcolor,
+.jimu-preload-widget-icon,
+.esriPopup .titlePane,
+.esriPopupMobile .titlePane,
+.esriMobileNavigationBar {
+	background: #2F2F2D url('stoneTexture.jpg');
+}
+
+/*Stylized font on top of texture***************/
+.jimu-main-bgcolor .jimu-styled-text,
+.jimu-main-bgcolor.jimu-styled-text,
+.esriPopupMobile .titlePane,
+.esriMobileNavigationBar .esriMobileNavigationItem.center {
+	font-weight: 700;
+	font-family: 'Exo', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	color: rgba(197,200,204, 0.6);
+	text-shadow: rgba(186, 190, 192, 0.6) 0 0 1px;
+}
+
+/*Fade white logos into the texture*************/
+.jimu-widget-floatingheader.filterLogo .logo img,
+.jimu-preload-widget-icon img,
+.esriPopup .titleButton,
+.esriPopupMobile .titleButton,
+.esriMobileNavigationBar img {
+	opacity: 0.8;
+	-webkit-filter: invert(20%);
+	filter: invert(20%);
+}
+
+/*Border Colours********************************/
+.jimu-widget-floatingheader,
+.jimu-preload-widget-icon,
+.jimu-panel-floating,
+.jimu-panel-floating .widgetCnt,
+.esriPopup .titlePane,
+.esriMobileNavigationBar,
+.esriPopup .esriPopupWrapper,
+.esriPopup .outerPointer,
+.esriPopupMobile .titlePane {
+	border-color: #727270;
+}
+
+.jimu-widget-floatingheader .links a,
+.jimu-widget-floatingheader .linksButton:hover,
+.jimu-panel-floating .title .close:hover {
+	border-color: rgba(255,255,255, 0.60);
+}
+
+/*Widget/pop-up background colour****************/
+.jimu-main-bgcolor .widgetCnt,
+.jimu-main-bgcolor .widgetCnt .jimu-widget-frame,
+.esriPopup .outerPointer,
+.esriPopup .contentPane,
+.esriPopup .actionsPane {
+	background-color: #E4E4E4;
+}
+
+/*Style Specific Images*************************/
+.jimu-widget-floatingheader .linksButton {
+	background: transparent url('link.png');
+}
+
+.esriPopupMobile .pointer.bottom {
+	background-image: url('stonePointerDown.png');
+}
+
+.esriPopupMobile .pointer.top {
+	background-image: url('stonePointerUp.png');
+}
+
+/*Widget Button State Overlays******************/
+.jimu-preload-widget-icon:hover {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)), url('stoneTexture.jpg') #2F2F2D;
+	/*gradient used for overlay*/
+}
+
+.jimu-preload-widget-icon.jimu-state-selected {
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6) inset, -4px -4px 4px rgba(0, 0, 0, 0.6) inset;
+}
+
+/*Panel/Frame Shadow****************************/
+.jimu-panel-floating .widgetCnt {
+	box-shadow: 3px 3px 2px #AAA inset, -3px -3px 2px #AAA inset;
+}

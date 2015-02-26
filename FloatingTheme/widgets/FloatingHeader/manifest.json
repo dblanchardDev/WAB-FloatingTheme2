@@ -1,0 +1,17 @@
+{
+	"name": "Floating Header",
+	"2D": true,
+	"3D": true,
+	"platform": "HTML",
+	"version": "1.1",
+	"wabVersion": "1.1",
+	"author": "Esri Canada",
+	"description": "Header for the Floating Theme Demo",
+	"copyright": "2015 Esri Canada",
+	"license": "http://www.apache.org/licenses/LICENSE-2.0",
+	"properties": {
+		"hasConfig": true,
+		"inPanel": false,
+		"isThemeWidget": true
+	}
+}

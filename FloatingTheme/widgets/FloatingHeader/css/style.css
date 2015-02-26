@@ -1,0 +1,171 @@
+/*
+	Copyright 2015 - Esri Canada
+
+	Licensed under the Apache License Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	  http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+*/
+
+.jimu-widget-floatingheader {
+	width: 80% !important;
+	max-width: calc(100% - 60px);
+	z-index: 40;
+	overflow: hidden;
+	transition: height 500ms ease 0s;
+	padding: 2px;
+	border-style: solid;
+	border-width: 1px 3px 3px 0;
+}
+
+/*Titles****************************************/
+.jimu-widget-floatingheader .titles {
+	margin-left: 5px;
+	display: inline-block;
+	width: calc(60% - 45px);
+	vertical-align: top;
+}
+
+.jimu-widget-floatingheader h1,
+.jimu-widget-floatingheader h2 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.jimu-widget-floatingheader h1 {
+	margin: 0 0 2px 0;
+	padding: 0;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.jimu-widget-floatingheader h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+/*Logo******************************************/
+.jimu-widget-floatingheader .logo {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+.jimu-widget-floatingheader .logo img {
+	width: 100%;
+	height: auto;
+}
+
+/*Links*****************************************/
+.jimu-widget-floatingheader .links {
+	display: inline-block;
+	width: calc(40% - 15px);
+	vertical-align: top;
+	margin-top: 18px;
+}
+
+.jimu-widget-floatingheader .links a {
+	display: inline-block;
+	float: right;
+	padding: 0 5px;
+	margin: 2px 3px 0 0;
+	max-width: calc(100% - 3px);
+	
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+	cursor: pointer;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.jimu-widget-floatingheader .links a:link,
+.jimu-widget-floatingheader .links a:visited,
+.jimu-widget-floatingheader .links a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.jimu-widget-floatingheader .links a:hover,
+.jimu-widget-floatingheader .links a:focus {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.jimu-widget-floatingheader .links.two a,
+.jimu-widget-floatingheader .links.plus a {
+	max-width: calc(50% - 3px);
+}
+
+.jimu-widget-floatingheader .links.plus {
+	margin-top: 0;
+}
+
+.jimu-widget-floatingheader .links.plus a {
+	font-size: 12px;
+}
+
+/*Links button for small screens****************/
+.jimu-widget-floatingheader .linksButton {
+	width: 40px;
+	height: 40px;
+	display: none;
+	border: 1px solid transparent;
+	border-radius: 40px;
+	cursor: pointer;
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition-property: transform, -webkit-transform, border-color;
+	transition-duration: 500ms, 500ms, 100ms;
+	outline: none;
+}
+
+/*Adjustments for narrow screens***************/
+@media screen and (max-width: 600px) {
+	/*Hide logo*/
+	.jimu-widget-floatingheader .logo {
+		display: none;
+	}
+	
+	/*Move links below the title*/
+	.jimu-widget-floatingheader .titles {
+		width: calc(100% - 50px);
+	}
+	
+	.jimu-widget-floatingheader .links {
+		display: block;
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	/*Expand/collapse links*/
+	.jimu-widget-floatingheader .linksButton {
+		display: inline-block;
+	}
+	
+	.jimu-widget-floatingheader.linksOpen {
+		height: 78px !important;
+	}
+	
+	.jimu-widget-floatingheader.linksOpen .linksButton {
+		-ms-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+}

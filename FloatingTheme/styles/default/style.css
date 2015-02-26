@@ -1,0 +1,90 @@
+
+/*Import custom web font************************/
+@import url(//fonts.googleapis.com/css?family=Exo:800);
+
+/*Main background colour/texture****************/
+.jimu-main-bgcolor,
+.jimu-preload-widget-icon,
+.esriPopup .titlePane,
+.esriPopupMobile .titlePane,
+.esriMobileNavigationBar {
+	background: #A08D7B url('woodTexture.jpg');
+}
+
+/*Stylized font on top of texture***************/
+.jimu-main-bgcolor .jimu-styled-text,
+.jimu-main-bgcolor.jimu-styled-text,
+.esriPopupMobile .titlePane,
+.esriMobileNavigationBar .esriMobileNavigationItem.center {
+	font-weight: 800;
+	font-family: 'Exo', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	color: rgba(48, 44, 40, 0.7);
+	text-shadow: rgba(150, 150, 150, 0.4) 0 0 1px;
+}
+
+/*Fade white logos into the texture*************/
+.jimu-widget-floatingheader.filterLogo .logo img,
+.jimu-preload-widget-icon img,
+.esriPopup .titleButton,
+.esriPopupMobile .titleButton,
+.esriMobileNavigationBar img {
+	opacity: 0.8;
+	-webkit-filter: invert(80%);
+	filter: invert(80%);
+}
+
+/*Border Colours********************************/
+.jimu-widget-floatingheader,
+.jimu-preload-widget-icon,
+.jimu-panel-floating,
+.jimu-panel-floating .widgetCnt,
+.esriPopup .titlePane,
+.esriMobileNavigationBar,
+.esriPopup .esriPopupWrapper,
+.esriPopup .outerPointer,
+.esriPopupMobile .titlePane {
+	border-color: #5A534C;
+}
+
+.jimu-widget-floatingheader .links a,
+.jimu-widget-floatingheader .linksButton:hover,
+.jimu-panel-floating .title .close:hover {
+	border-color: rgba(48, 44, 40, 0.7);
+}
+
+/*Widget/pop-up background colour****************/
+.jimu-main-bgcolor .widgetCnt,
+.jimu-main-bgcolor .widgetCnt .jimu-widget-frame,
+.esriPopup .outerPointer,
+.esriPopup .contentPane,
+.esriPopup .actionsPane {
+	background-color: rgb(236, 232, 228);
+}
+
+/*Style Specific Images*************************/
+.jimu-widget-floatingheader .linksButton {
+	background: transparent url('link.png');
+}
+
+.esriPopupMobile .pointer.bottom {
+	background-image: url('woodPointerDown.png');
+}
+
+.esriPopupMobile .pointer.top {
+	background-image: url('woodPointerUp.png');
+}
+
+/*Widget Button State Overlays******************/
+.jimu-preload-widget-icon:hover {
+	background: linear-gradient(to right, rgba(150, 120, 100, 0.4),  rgba(150, 120, 100, 0.4)), url('woodTexture.jpg') #A08D7B;
+	/*gradient used for overlay*/
+}
+
+.jimu-preload-widget-icon.jimu-state-selected {
+	box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5) inset, -2px -2px 2px rgba(50, 50, 50, 0.5) inset;
+}
+
+/*Panel/Frame Shadow****************************/
+.jimu-panel-floating .widgetCnt {
+	box-shadow: 3px 3px 2px gray inset, -3px -3px 2px gray inset;
+}

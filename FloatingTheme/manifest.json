@@ -1,0 +1,43 @@
+{
+	"name": "FloatingTheme",
+	"panels": [
+		{
+			"name": "FloatingPanel",
+			"description": "This is a floating panel"
+		}
+	],
+	"styles": [
+		{
+			"name": "default",
+			"description": "Wood Plank Texture",
+			"styleColor": "#A08D7B"
+		},
+		{
+			"name": "stone",
+			"description": "Natural Dark Stone Texture",
+			"styleColor": "#62635F"
+		}
+	],
+	"layouts": [
+		{
+			"name": "default",
+			"description": "Widgets placed vertically along side"
+		},
+		{
+			"name": "horizontal",
+			"description": "Widgets placed horizontally along bottom"
+		}
+	],
+	"widgets": [
+		{
+		  "name": "FloatingHeader",
+		  "description": "Header for the title, logo, and links"
+		}
+	],
+	"version": "1.1",
+	"wabVersion": "1.1",
+	"author": "Esri Canada",
+	"description": "Floating Theme for demonstrations",
+	"copyright": "2015 Esri Canada",
+	"license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

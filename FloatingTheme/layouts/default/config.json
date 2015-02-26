@@ -1,0 +1,77 @@
+{
+	"widgetOnScreen": {
+		"panel": {
+			"uri": "themes/FloatingTheme/panels/FloatingPanel/Panel",
+			"positionRelativeTo": "browser"
+		},
+
+		"widgets": [
+			{
+				"uri": "themes/FloatingTheme/widgets/FloatingHeader/Widget",
+				"positionRelativeTo": "browser",
+				"position": {
+					"left": 0,
+					"top": 10,
+					"right": 0,
+					"height": 51
+				},
+				"version": "1.1"
+			},
+			
+			{
+				"uri": "widgets/HomeButton/Widget",
+				"inPanel": false,
+				"position": {
+					"left": 7,
+					"top": 141
+				},
+				"version": "1.1"
+			},
+			
+			{
+				"uri": "widgets/Scalebar/Widget",
+				"position": {
+					"left": 25,
+					"bottom": 25
+				},
+				"version": "1.1"
+			},
+
+			{
+				"position": {
+					"right": 10,
+					"top": 10
+				}
+			}, {
+				"position": {
+					"right": 10,
+					"top": 60
+				}
+			}, {
+				"position": {
+					"right": 10,
+					"top": 110
+				}
+			}, {
+				"position": {
+					"right": 10,
+					"top": 160
+				}
+			}, {
+				"position": {
+					"right": 10,
+					"top": 210
+				}
+			}
+		]
+	},
+
+	"map": {
+		"position": {
+			"left": 0,
+			"top": 0,
+			"right": 0,
+			"bottom": 0
+		}
+	}
+}
