@@ -9,6 +9,9 @@ Since this theme does not make use of a controller, widgets are limited to the 5
 
 This is an excellent theme for developers looking for a starting point in building their own themes as the code has been stripped down to a minimum and is well commented.
 
+> 🛑 **Deprecated**  
+> As ArcGIS Web AppBuilder is being deprecated, so is this theme. Consider migrating to ArcGIS Experience Builder.
+
 ### Using the Theme
 
 To use this theme, you must have a copy of [Web AppBuilder for ArcGIS – Developer Edition](https://developers.arcgis.com/web-appbuilder/) (does not work with ArcGIS Online of Portal for ArcGIS). You must also have an [ArcGIS Online Organizational Account](http://www.esri.com/software/arcgis/arcgisonline/).
